@@ -16,6 +16,7 @@ return [
     'Zend\\Validator',
     'ZF\\Apigility',
     'ZF\\Apigility\\Documentation',
+    'ZF\Apigility\Documentation\Swagger',
     'ZF\\ApiProblem',
     'ZF\\Configuration',
     'ZF\\Hal',
@@ -28,6 +29,7 @@ return [
     'Phpro\DoctrineHydrationModule',
     'ZF\Apigility\Doctrine\Server',
     'DoctrineORMModule',
+    'ZF\Apigility\Documentation\Swagger',
     'Application',
     'Dados',
 ];
