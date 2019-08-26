@@ -53,9 +53,10 @@ return [
             'collection_name' => 'enderecos',
             'entity_http_methods' => [
                 0 => 'GET',
-                1 => 'PATCH',
+                1 => 'POST',
                 2 => 'PUT',
-                3 => 'DELETE',
+                3 => 'PATCH',
+                4 => 'DELETE',
             ],
             'collection_http_methods' => [
                 0 => 'GET',
@@ -76,9 +77,10 @@ return [
             'collection_name' => 'usuarios',
             'entity_http_methods' => [
                 0 => 'GET',
-                1 => 'PATCH',
+                1 => 'POST',
                 2 => 'PUT',
-                3 => 'DELETE',
+                3 => 'PATCH',
+                4 => 'DELETE',
             ],
             'collection_http_methods' => [
                 0 => 'GET',
@@ -94,19 +96,17 @@ return [
     ],
     'zf-content-negotiation' => [
         'controllers' => [
-            'Dados\\V1\\Rest\\Enderecos\\Controller' => 'HalJson',
-            'Dados\\V1\\Rest\\Usuarios\\Controller' => 'HalJson',
+            'Dados\\V1\\Rest\\Enderecos\\Controller' => 'Json',
+            'Dados\\V1\\Rest\\Usuarios\\Controller' => 'Json',
         ],
         'accept_whitelist' => [
             'Dados\\V1\\Rest\\Enderecos\\Controller' => [
                 0 => 'application/vnd.dados.v1+json',
-                1 => 'application/hal+json',
-                2 => 'application/json',
+                1 => 'application/json',
             ],
             'Dados\\V1\\Rest\\Usuarios\\Controller' => [
                 0 => 'application/vnd.dados.v1+json',
-                1 => 'application/hal+json',
-                2 => 'application/json',
+                1 => 'application/json',
             ],
         ],
         'content_type_whitelist' => [

@@ -54,7 +54,7 @@ if (file_exists('config/development.config.php')) {
     );
 }
 
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 header("Access-Control-Allow-Methods: POST,GET,OPTIONS,DELETE,PUT,PATCH");
 header("Access-Control-Allow-Origin: *");
 
